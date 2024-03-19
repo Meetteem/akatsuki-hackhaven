@@ -8,8 +8,8 @@ const Getter = () => {
     const [rRemark, setRRemark] = useState("");
     const { contract } = useContract(process.env.NEXT_PUBLIC_SMART_CONTRACT);
     const { data: nextId } = useContractRead(contract, "nextId")
-    const { data: pendingApprovals } = useContractRead(contract, "pendingApprovals", 0)
-    const { data: pendingResolutions } = useContractRead(contract, "pendingResolutions", 0)
+    const { data: pendingApprovals } = useContractRead(contract, "pendingApprovals", "0")
+    const { data: pendingResolutions } = useContractRead(contract, "pendingResolutions", "0")
     const { mutateAsync: calcPendingApprovalIds } = useContractWrite(contract, "calcPendingApprovalIds")
     const { mutateAsync: calcPendingResolutionIds } = useContractWrite(contract, "calcPendingResolutionIds")
 
@@ -37,7 +37,7 @@ const Getter = () => {
 
     const handleApproveComplaint = async () => {
         try {
-            const data = await contract.call("approveComplaint", [id, approvalRemark])
+            const data = await contract.call("approveComplaint", [id, aRemark])
             console.info("contract call successs", data);
         } catch (err) {
             console.error("contract call failure", err);
@@ -46,7 +46,7 @@ const Getter = () => {
 
     const handleDeclineComplaint = async () => {
         try {
-            const data = await contract.call("discardComplaint", [_id, _approvalRemark])
+            const data = await contract.call("discardComplaint", [id, aRemark])
             console.info("contract call successs", data);
         } catch (err) {
             console.error("contract call failure", err);
@@ -55,7 +55,7 @@ const Getter = () => {
 
     const handleResolveComplaint = async () => {
         try {
-            const data = await resolveComplaint([rId, rRemark]);
+            const data = await contract.call("resolveComplaint",[rId, rRemark]);
             console.info("contract call successs", data);
         } catch (err) {
             console.error("contract call failure", err);

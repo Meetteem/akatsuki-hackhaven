@@ -45,7 +45,7 @@ const Complaint = () => {
                 <input
                     id="title"
                     type="text"
-                    className='w-full border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500'
+                    className='w-full border text-black border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500'
                     placeholder='Enter Title Here'
                     onChange={handleTitleChange}
                 />
@@ -57,7 +57,7 @@ const Complaint = () => {
                 <input
                     id="description"
                     type="text"
-                    className='w-full border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500'
+                    className='w-full border text-black border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500'
                     placeholder='Enter Description Here'
                     onChange={handleDescriptionChange}
                 />
