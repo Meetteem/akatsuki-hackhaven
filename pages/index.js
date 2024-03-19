@@ -107,8 +107,10 @@ export default function Home() {
       {/* Add more sections for other features */}
 
     </main>
-    <div className='flex justify-center p-10'>
+    <div className='flex justify-center p-2'>
       <p className='text-lg text-gray-600'>Have any complaint</p>
+      </div>
+      <div className='flex justify-center pb-4'>
     <Link className="bg-black text-white hover:bg-gray-800 px-4 py-2 rounded-md ml-4" href='/complain'>File Your Complaint Here</Link>
     </div>
     <footer className="bg-white border-t border-gray-200 mt-auto py-6">

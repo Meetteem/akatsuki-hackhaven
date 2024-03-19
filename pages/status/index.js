@@ -8,10 +8,10 @@ const Status = () => {
 
     return (
         <div className='status-container bg-gray-100 text-black p-8 rounded-lg shadow-lg min-h-full'>
-    <div className='status'>
-        <p className='status-title text-2xl font-bold mb-4'>Check Status of Your Complaint:</p>
+    <div className='status bg-gray-900 px-4'>
+        <p className='status-title text-white text-2xl font-bold mb-4 no-underline'>Check Status of Your Complaint:</p>
         <div className='flex items-center mb-4'>
-            <p className='status-text text-lg font-semibold mr-2'>Complaint ID:</p>
+            <p className='status-text text-white text-lg font-semibold mr-2'>Complaint ID:</p>
             <input
                 type="number"
                 className='status-input w-64 rounded-md p-2 bg-white text-black'
@@ -21,28 +21,28 @@ const Status = () => {
         </div>
     </div>
     {Complaints && Complaints.title && (
-        <div className="status-render-container mt-8" style={{width:'1000px'}} >
-            <p className='status-render-title text-lg font-bold mb-2'>Complaint Details:</p>
+        <div className="status-render-container mt-8  py-8 px-4 bg-gray-900" style={{width:'800px'}} >
+            <p className='status-render-title text-white text-2xl font-bold mb-2 no-underline'>Complaint Details:</p>
             <div className='status-render-text-container'>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Complaint ID: {(Complaints.id).toString()}
                 </p>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Complaint by: {(Complaints.complaintRegisteredBy).toString()}
                 </p>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Complaint Title: {Complaints.title}
                 </p>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Approval Status: {Complaints.isApproved ? "Approved" : !Complaints.exists ? "Declined" : "Approval Pending"}
                 </p>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Approval Remark: {Complaints.approvalRemark}
                 </p>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Resolution Status: {Complaints.isResolved ? "Resolved" : "Resolution pending"}
                 </p>
-                <p className='status-render-text font-semibold'>
+                <p className='status-render-text font-semibold text-white'>
                     Resolution Remark: {Complaints.resolutionRemark}
                 </p>
             </div>
