@@ -37,30 +37,43 @@ const Complaint = () => {
     };
 
     return (
-        <div className='complaint-container bg-gray-300 text-black p-8 rounded-md md:mr-10 md:ml-10'>
-            <p className="complaint-title-red text-2xl mb-4">File Your Complaint Here:</p>
-            <div className='flex items-center mb-4'>
-                <p className='complaint-text-margin text-base'>Title: </p>
+        <div className='flex justify-center items-start min-h-screen bg-gray-100'>
+            <div className='w-full  mt-10 bg-gray-900 rounded-md shadow-lg p-8 text-white' style={{ height: '450px', width: '700px' }}>
+            <h1 className="text-4xl text-white-600 mb-6">File Your Complaint Here:</h1>
+            <div className='mb-4'>
+                <label htmlFor="title" className='block text-lg mb-1'>Title:</label>
                 <input
+                    id="title"
                     type="text"
-                    className='container-input w-full md:w-[500px] ml-2 rounded-md p-2'
+                    className='w-full border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500'
                     placeholder='Enter Title Here'
                     onChange={handleTitleChange}
                 />
             </div>
-            <div className='flex items-center mb-4'>
-                <p className='complaint-text-normal text-base'>Description: </p>
+            <br></br>
+            
+            <div className='mb-4'>
+                <label htmlFor="description" className='block text-lg mb-1'>Description:</label>
                 <input
+                    id="description"
                     type="text"
-                    className='container-input w-full md:w-[500px] ml-2 rounded-md p-2'
+                    className='w-full border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-blue-500'
                     placeholder='Enter Description Here'
                     onChange={handleDescriptionChange}
                 />
             </div>
-            <button type="submit" className="button-common bg-black text-white hover:bg-gray-900 rounded-md py-2 px-4" onClick={handleComplaint}>
+            <br></br>
+            <br></br>
+            <div className='flex justify-center'>
+            <button type="submit"  className="w-full bg-gray-600 text-white hover:text-black hover:bg-white rounded-md py-3 px-6 transition duration-300 justify-center"  style={{ width: '350px' }}  onClick={handleComplaint}>
                 File Complaint
             </button>
+            </div>
         </div>
+    </div>
+    
+
+
     );
 };
 

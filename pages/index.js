@@ -39,14 +39,16 @@ export default function Home() {
     <main className="max-w-7xl mx-auto px-4 py-8">
       <section className="py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="flex items-center justify-center">
-            <img src="/feature1.svg" alt="Feature 1" className="w-48" />
+          <div className="flex items-center justify-center " >
+            <img src="/hh1.jpg" alt="Feature 1" className="rounded-lg" width="600" />
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center ">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Decentralized Data Storage</h2>
-            <p className="text-lg text-gray-600">
-              Store complaints securely on the decentralized network, ensuring data integrity and privacy.
-            </p>
+            <p className="text-lg text-gray-600 text-justify" >
+        Store complaints securely on the decentralized network, ensuring data integrity and privacy. 
+        Our decentralized data storage solution leverages blockchain technology, distributing complaint records across a network of nodes, eliminating single points of failure and enhancing security. 
+       
+      </p>
           </div>
         </div>
       </section>
@@ -55,12 +57,15 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Transparent Record Keeping</h2>
-            <p className="text-lg text-gray-600">
-              Every complaint record is transparently stored on the blockchain for accountability and auditability.
-            </p>
+            <p className="text-lg text-gray-600 text-justify">
+        Every complaint record is transparently stored on the blockchain for accountability and auditability.
+        Our system utilizes the inherent transparency of blockchain technology to ensure that every complaint record is publicly accessible and immutable. 
+        
+        
+      </p>
           </div>
           <div className="flex items-center justify-center">
-            <img src="/feature2.svg" alt="Feature 2" className="w-48" />
+            <img src="/hh2.jpg" alt="Feature 2" className="w-58 rounded-lg" />
           </div>
         </div>
       </section>
@@ -68,13 +73,16 @@ export default function Home() {
       <section className="py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-center justify-center">
-            <img src="/feature3.svg" alt="Feature 3" className="w-48" />
+            <img src="/hh3.jpg" alt="Feature 3" className="rounded-lg" width="600" />
           </div>
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Automated Resolution Process</h2>
-            <p className="text-lg text-gray-600">
-              Utilize smart contracts and automated processes for faster and fairer complaint resolutions.
-            </p>
+            <p className="text-lg text-gray-600 text-justify">
+        Utilize smart contracts and automated processes for faster and fairer complaint resolutions.
+        Our platform harnesses the power of smart contracts, self-executing code deployed on a blockchain, to automate and streamline the complaint resolution process.
+        
+        
+      </p>
           </div>
         </div>
       </section>
@@ -83,12 +91,15 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">User Privacy Protection</h2>
-            <p className="text-lg text-gray-600">
-              Personal data is encrypted and remains under the control of users, ensuring privacy and GDPR compliance.
-            </p>
+            <p className="text-lg text-gray-600 text-justify">
+        Personal data is encrypted and remains under the control of users, ensuring privacy and GDPR compliance.
+        Our platform prioritizes the protection of user privacy by employing robust encryption techniques to safeguard personal data.
+
+        
+        </p>
           </div>
           <div className="flex items-center justify-center">
-            <img src="/feature4.svg" alt="Feature 4" className="w-48" />
+            <img src="/hh4.jpg" alt="Feature 4" className="rounded-lg" width="600"/>
           </div>
         </div>
       </section>

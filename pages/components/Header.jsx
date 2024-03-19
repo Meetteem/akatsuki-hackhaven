@@ -4,7 +4,7 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 
 const Header = () => {
     return (
-        <nav className='bg-gray-900 text-white py-4 px-8 flex justify-between items-center'>
+        <nav className='bg-gray-900 text-white py-8 px-8 flex justify-between items-center'>
             <Link href="/">
                 <text className='text-2xl font-bold hover:text-blue-500'>Complain Management System</text>
             </Link>
